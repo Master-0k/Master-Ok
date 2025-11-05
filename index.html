@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Master-Ok Премиальный ремонт под ключ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header_content">
+                <div class="logo">
+                    <div class="logo_text"><span class="logo_highlight">ГК "</span>Master-Ok<span class="logo_highlight">"</span></div>
+                </div>
+                
+                <nav class="nav_desktop">
+                    <a href="#projects" class="nav_link">Проекты</a>
+                    <a href="#services" class="nav_link">Услуги</a>
+                    <a href="#materials" class="nav_link">Материалы</a>
+                    <a href="#contacts" class="nav_link">Контакты</a>
+                    <a href="#about" class="nav_link">О нас</a>                    
+                </nav>
+                
+                <div class="header_actions">
+                    <a href="tel:+79114562713" class="phone_link">
+                        <i data-feather="phone"></i>
+                        <span>+7 (911) 456-27-13</span>
+                    </a>
+                    <a href="https://t.me/VyaheslavIsaev" target="_blank" class="telegram_btn">
+                        <i data-feather="send"></i>
+                        <span>Написать в Telegram</span>
+                    </a>
+                    <button id="theme_toggle" class="theme_btn">
+                        <i data-feather="moon"></i>
+                    </button>
+                    <button class="menu_toggle" id="menu_toggle">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile_menu" class="mobile_menu hidden">
+                <div class="mobile_nav">
+                    <a href="#projects" class="nav_link">Проекты</a>
+                    <a href="#services" class="nav_link">Услуги</a>
+                    <a href="#about" class="nav_link">О нас</a>
+                    <a href="#materials" class="nav_link">Материалы</a>
+                    <a href="#contacts" class="nav_link">Контакты</a>
+                    <a href="tel:+79114562713" class="phone_link">
+                        <i data-feather="phone"></i>
+                        <span>+7 (911) 456-27-13</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero_content">
+                <img class="logo_hero" src="src/logo.png" alt="Логотип Master-Ok">
+                <h1 class="section_title">Ремонт <span class="highlight">под ключ</span></h1>
+                <p class="hero_subtitle">Создаем комфортные и современные пространства с 2013 года</p>
+                <div class="hero_buttons">
+                    <a href="#contacts" class="btn_primary">Бесплатная консультация</a>
+                    <a href="#projects" class="btn_secondary">Наши работы</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section_header">
+                <h2 class="section_title">Наши <span class="highlight">проекты</span></h2>
+                <p class="section_description">Реализованные работы в квартирах, домах и коммерческих помещениях</p>
+            </div>
+            
+            <div class="projects_grid" id="projects_grid">
+                <!-- Projects will be loaded dynamically -->
+            </div>
+            
+            <div class="section_footer">
+                <button id="load_more_projects" class="btn_outline">Показать ещё</button>
+                <button id="collapse_projects" class="btn_outline hidden">Скрыть дополнительные</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section_header">
+                <h2 class="section_title">Наши <span class="highlight">услуги</span></h2>
+                <p class="section_description">Полный комплекс работ по ремонту и отделке помещений</p>
+            </div>
+            
+            <div class="services_grid">
+                <!-- Service 1 -->
+                <div class="service_card">
+                    <div class="service_icon">
+                        <i data-feather="home"></i>
+                    </div>
+                    <h3 class="service_title">Капитальный ремонт</h3>
+                    <p class="service_desc">Полное обновление интерьера с учетом ваших пожеланий и современных технологий.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service_card">
+                    <div class="service_icon">
+                        <i data-feather="tool"></i>
+                    </div>
+                    <h3 class="service_title">Отделочные работы</h3>
+                    <p class="service_desc">Швы, стяжка, штукатурка, покраска, укладка полов, плитка, обои - качественно и аккуратно.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service_card">
+                    <div class="service_icon">
+                        <i data-feather="zap"></i>
+                    </div>
+                    <h3 class="service_title">Инженерные работы</h3>
+                    <p class="service_desc">Электромонтажные и сантехнические работы по современным стандартам.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service_card">
+                    <div class="service_icon">
+                        <i data-feather="layout"></i>
+                    </div>
+                    <h3 class="service_title">Дизайн интерьера</h3>
+                    <p class="service_desc">Поможем выбрать стиль, материалы и оптимизировать планировку.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service_card">
+                    <div class="service_icon">
+                        <i data-feather="shopping-bag"></i>
+                    </div>
+                    <h3 class="service_title">Меблировка</h3>
+                    <p class="service_desc">Индивидуально подобранная мебель и оформление пространства.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service_card">
+                    <div class="service_icon">
+                        <i data-feather="check-circle"></i>
+                    </div>
+                    <h3 class="service_title">Авторский надзор</h3>
+                    <p class="service_desc">Контроль качества на всех этапах выполнения работ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about_content">
+                <div class="about_image">
+                    <img src="https://101course.ru/assets/images/master-otdelochnih-rabot.jpg" alt="Наша команда">
+                </div>
+                <div class="about_text">
+                    <h2 class="section_title">Почему выбирают <span class="highlight">нас</span></h2>
+                    <p class="about_desc">Команда профессионалов с более чем 10-летним опытом. Мы реализуем проекты разной сложности, создавая комфортные и современные пространства для наших клиентов.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <div class="feature_icon">
+                                <i data-feather="award"></i>
+                            </div>
+                            <div class="feature_content">
+                                <h4 class="feature_title">Гарантия качества и сроков</h4>
+                                <p class="feature_desc">Работаем строго по договору, соблюдаем дедлайны.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature_icon">
+                                <i data-feather="box"></i>
+                            </div>
+                            <div class="feature_content">
+                                <h4 class="feature_title">Проверенные материалы</h4>
+                                <p class="feature_desc">Партнеры: Leroy Merlin, Бауцентр, Knauf, Tarkett и другие.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature_icon">
+                                <i data-feather="users"></i>
+                            </div>
+                            <div class="feature_content">
+                                <h4 class="feature_title">Команда профессионалов</h4>
+                                <p class="feature_desc">Наши сотрудники — опытные специалисты.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section id="materials" class="section materials">
+        <div class="container">
+            <div class="section_header">
+                <h2 class="section_title">Используем <span class="highlight">лучшие</span> материалы</h2>
+                <p class="section_description">Сотрудничаем с ведущими производителями и поставщиками</p>
+            </div>
+            
+            <div class="brands_slider">
+                <div class="brands_track">
+                    <!-- Brands will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="cta_title">Готовы начать свой проект?</h2>
+            <p class="cta_desc">Оставьте заявку и получите бесплатную консультацию от нашего специалиста</p>
+            <div class="cta_buttons">
+                <a href="#contacts" class="btn_secondary">Оставить заявку</a>
+                <a href="tel:+79114562713" class="btn_secondary">Позвонить нам</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="section contacts">
+        <div class="container">
+            <div class="contacts_content">
+                <div class="contacts_info">
+                    <h2 class="section_title">Наши <span class="highlight">контакты</span></h2>
+                    <p class="contacts_desc">Свяжитесь с нами удобным для вас способом</p>
+                    
+                    <div class="contacts_list">
+                        <div class="contact_item">
+                            <div class="contact_icon">
+                                <i data-feather="phone"></i>
+                            </div>
+                            <div class="contact_details">
+                                <h4 class="contact_title">Телефон</h4>
+                                <a href="tel:+79114562713" class="contact_link">+7 (911) 456-27-13</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact_item">
+                            <div class="contact_icon">
+                                <i data-feather="mail"></i>
+                            </div>
+                            <div class="contact_details">
+                                <h4 class="contact_title">Email</h4>
+                                <a href="mailto:kokoriri2112@gmail.com" class="contact_link">kokoriri2112@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact_item">
+                            <div class="contact_icon">
+                                <i data-feather="map-pin"></i>
+                            </div>
+                            <div class="contact_details">
+                                <h4 class="contact_title">Адрес</h4>
+                                <p class="contact_text">Гурьевский муниципальный округ, п. Большое Исаково, ул. Кооперативная, д. 10</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact_item">
+                            <div class="contact_icon">
+                                <i data-feather="clock"></i>
+                            </div>
+                            <div class="contact_details">
+                                <h4 class="contact_title">Часы работы</h4>
+                                <p class="contact_text">Пн-Пт: 9:00 - 18:00<br>Сб-Вс: выходной</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social_links">
+                        <h5 class="social_title">Мы в соцсетях</h5>
+                        <div class="social_icons">
+                            <a href="https://www.instagram.com/" target="_blank" class="social_icon">
+                                <i data-feather="instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank" class="social_icon">
+                                <i data-feather="facebook"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="social_icon">
+                                <i data-feather="youtube"></i>
+                            </a>
+                            <a href="https://t.me/VyaheslavIsaev" target="_blank" class="social_icon">
+                                <i data-feather="send"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact_form_wrapper">
+                    <div class="contact_form">
+                        <h3 class="form_title">Оставить заявку</h3>
+                        <form id="contact_form">
+                            <div class="form_group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form_group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                            <div class="form_group">
+                                <label for="message">Сообщение</label>
+                                <textarea id="message" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn_primary">Отправить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="project_modal" class="modal hidden">
+        <div class="modal_overlay" id="modal_overlay"></div>
+        <div class="modal_content">
+            <button class="modal_close" id="modal_close">
+                <i data-feather="x"></i>
+            </button>
+            <div class="modal_header">
+                <h2 id="modal_title"></h2>
+                <p id="modal_desc"></p>
+                <span id="modal_status" class="project_status"></span>
+            </div>
+            <div class="modal_gallery">
+                <div class="gallery_slider">
+                    <div class="gallery_track" id="gallery_track">
+                        <!-- Images loaded dynamically -->
+                    </div>
+                </div>
+                <div class="gallery_nav">
+                    <button class="nav_btn prev" id="prev_btn"><i data-feather="chevron-left"></i></button>
+                    <span id="current_image">1 / <span id="total_images"></span></span>
+                    <button class="nav_btn next" id="next_btn"><i data-feather="chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Новый модал для выбора мессенджера -->
+    <div id="messenger_modal" class="modal hidden">
+        <div class="modal_overlay" id="messenger_overlay"></div>
+        <div class="modal_content">
+            <button class="modal_close" id="messenger_close">
+                <i data-feather="x"></i>
+            </button>
+            <div class="modal_header">
+                <h2>Выберите мессенджер</h2>
+                <p>Куда отправить сообщение?</p>
+            </div>
+            <div class="messenger_choices">
+                <button id="whatsapp_choice" class="btn_primary">WhatsApp</button>
+                <button id="telegram_choice" class="btn_secondary">Telegram</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <section class="map_section">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac01132c778bf2eaffb8aa7f1b44a6c7ec1cde54191ce97c25775bf335bd39cd3&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_content">
+                <div class="footer_brand">
+                    <div class="logo_text"><span class="logo_highlight">ГК "</span>Master-Ok<span class="logo_highlight">"</span></div>
+                    <p class="footer_desc">Премиальный ремонт "Под ключ" с 2013 года</p>
+                    <div class="social_icons">
+                        <a href="https://www.instagram.com/" target="_blank" class="social_icon">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" class="social_icon">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="social_icon">
+                            <i data-feather="youtube"></i>
+                        </a>
+                        <a href="https://t.me/VyaheslavIsaev" target="_blank" class="social_icon">
+                            <i data-feather="send"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer_section">
+                    <h4 class="footer_title">Услуги</h4>
+                    <ul class="footer_list">
+                        <li><a href="#" class="footer_link">Капитальный ремонт</a></li>
+                        <li><a href="#" class="footer_link">Отделочные работы</a></li>
+                        <li><a href="#" class="footer_link">Дизайн интерьера</a></li>
+                        <li><a href="#" class="footer_link">Меблировка</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer_section">
+                    <h4 class="footer_title">О компании</h4>
+                    <ul class="footer_list">
+                        <li><a href="#" class="footer_link">О нас</a></li>
+                        <li><a href="#" class="footer_link">Портфолио</a></li>
+                        <li><a href="#" class="footer_link">Отзывы</a></li>
+                        <li><a href="#" class="footer_link">Блог</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer_section">
+                    <h4 class="footer_title">Контакты</h4>
+                    <address>
+                        <p class="footer_address">Гурьевский муниципальный округ, п. Большое Исаково, ул. Кооперативная, д. 10</p>
+                        <p><a href="tel:+79114562713" class="footer_link">+7 (911) 456-27-13</a></p>
+                        <p><a href="mailto:kokoriri2112@gmail.com" class="footer_link">kokoriri2112@gmail.com</a></p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="footer_bottom">
+                <p>&copy; 2025 ГК "Master-Ok". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button (изменено на button) -->
+    <button id="whatsapp_btn" class="whatsapp_btn">
+        <i data-feather="message-circle"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
