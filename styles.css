@@ -337,11 +337,21 @@ img {
 
 .btn_outline {
     border: 2px solid var(--primary);
-    color: var(--primary);
-    background-color: transparent;
+    color: var(--white);
+    background-color: var(--primary);
 }
 
 .btn_outline:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.dark .btn_outline {
+    background-color: transparent;
+    color: var(--primary);
+}
+
+.dark .btn_outline:hover {
     background-color: var(--primary);
     color: var(--white);
 }
@@ -1345,4 +1355,16 @@ img {
 .messenger_choices .btn_secondary {
     width: 100%;
     max-width: 250px;
+}
+
+.messenger_choices .btn_secondary {
+    background-color: #0088cc;
+    color: var(--white);
+    border-color: #0088cc;
+}
+
+.dark .messenger_choices .btn_secondary {
+    background-color: #0088cc;
+    color: var(--white);
+    border-color: #0088cc;
 }

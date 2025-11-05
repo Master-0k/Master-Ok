@@ -84,7 +84,7 @@ if (whatsappChoice) {
 }
 if (telegramChoice) {
     telegramChoice.addEventListener('click', () => {
-        const url = `https://t.me/igoscoot?text=${encodeURIComponent(currentMessage)}`;
+        const url = `https://t.me/VyaheslavIsaev?text=${encodeURIComponent(currentMessage)}`;
         window.open(url, '_blank');
         closeMessengerModal();
     });
