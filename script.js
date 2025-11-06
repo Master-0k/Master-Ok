@@ -271,7 +271,11 @@ const projectsData = [
             'src/bathrooms/bathrooms1.jpg',
             'src/bathrooms/bathrooms2.jpg',
             'src/bathrooms/bathrooms4.jpg',
-            'src/bathrooms/bathrooms3.jpg'
+            'src/bathrooms/bathrooms3.jpg',
+            'src/bathrooms/bathrooms5.jpg',
+            'src/bathrooms/bathrooms6.jpg',
+            'src/bathrooms/bathrooms7.jpg',
+            'src/bathrooms/bathrooms8.jpg',
         ]
     },
     {
@@ -286,13 +290,19 @@ const projectsData = [
             'src/rooms/rooms1.jpg',
             'src/rooms/rooms2.jpg',
             'src/rooms/rooms3.jpg',
-            'src/rooms/rooms4.jpg'
+            'src/rooms/rooms4.jpg',
+            'src/rooms/rooms5.jpg',
+            'src/rooms/rooms6.jpg',
+            'src/rooms/rooms7.jpg',
+            'src/rooms/rooms8.jpg',
+            'src/rooms/rooms9.jpg',
+            'src/rooms/rooms10.jpg',
         ]
     },
     {
         image: 'src/Kitchen/grok-video-ca55c9c3-0c86-4a2d-ab9d-fdd9eed59fee-0.mp4',
         alt: 'Дизайн кухни',
-        title: 'Кухни-трансформеры',
+        title: 'Кухни-Столовые',
         desc: 'Многофункциональные кухонные пространства со скрытыми коммуникациями и техникой',
         status: 'completed',
         statusText: 'реализованны',
@@ -302,6 +312,9 @@ const projectsData = [
             'src/Kitchen/Kitchen2.jpg',
             'src/Kitchen/Kitchen3.jpg',
             'src/Kitchen/Kitchen4.jpg',
+            'src/Kitchen/Kitchen5.jpg',
+            'src/Kitchen/Kitchen6.jpg',
+            'src/Kitchen/Kitchen7.jpg',
         ]
     },
     {
@@ -317,21 +330,7 @@ const projectsData = [
             'src/livingroom/livingroom2.jpg',
             'src/livingroom/livingroom3.jpg',
             'src/livingroom/livingroom4.jpg',
-        ]
-    },
-    {
-        image: 'src/staircase/grok-video-ed9c4d9f-ca28-4056-908c-0edd0cf89666-1.mp4',
-        alt: 'Дизайн лестницы',
-        title: 'Архитектурные лестницы',
-        desc: 'Безопасные конструктивы с художественной подсветкой и премиальными материалами',
-        status: 'in_progress',
-        statusText: 'Только рендеры',
-        link: '#',
-        images: [
-            'src/staircase/staircase1.jpg',
-            'src/staircase/staircase2.jpg',
-            'src/staircase/staircase3.jpg',
-            'src/staircase/staircase4.jpg',
+            'src/livingroom/livingroom5.jpg',
         ]
     },
 ];
